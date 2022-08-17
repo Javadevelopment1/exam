@@ -5,6 +5,9 @@ public class ApiResult<T> {
     private String message;
     private T data;
 
+    public ApiResult() {
+    }
+
     public ApiResult(int code, String message, T data) {
         this.code = code;
         this.message = message;
