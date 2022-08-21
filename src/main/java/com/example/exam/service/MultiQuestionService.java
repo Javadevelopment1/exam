@@ -2,7 +2,7 @@ package com.example.exam.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.exam.entity.MultiQuestion;
+import com.example.exam.entity.MultiQuestion;
 
 import java.util.List;
 
