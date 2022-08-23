@@ -1,6 +1,6 @@
 package com.example.exam.service;
 
-import com.exam.entity.Replay;
+import com.example.exam.entity.Replay;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.example.exam.service;
 
-import com.exam.entity.Admin;
+import com.example.exam.entity.Admin;
 
 import java.util.List;
 
