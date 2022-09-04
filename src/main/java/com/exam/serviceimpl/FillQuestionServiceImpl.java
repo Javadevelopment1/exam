@@ -16,26 +16,26 @@ public class FillQuestionServiceImpl implements FillQuestionService {
 
     @Override
     public List<FillQuestion> findByIdAndType(Integer paperId) {
-        return null;
+        return fillQuestionMapper.findByIdAndType(paperId);
     }
 
     @Override
     public IPage<FillQuestion> findAll(Page<FillQuestion> page) {
-        return null;
+        return fillQuestionMapper.findAll(page);
     }
 
     @Override
     public FillQuestion findOnlyQuestionId() {
-        return null;
+        return fillQuestionMapper.findOnlyQuestionId();
     }
 
     @Override
     public int add(FillQuestion fillQuestion) {
-        return 0;
+        return fillQuestionMapper.add(fillQuestion);
     }
 
     @Override
     public List<Integer> findBySubject(String subject, Integer pageNo) {
-        return null;
+        return fillQuestionMapper.findBySubject(subject, pageNo);
     }
 }
