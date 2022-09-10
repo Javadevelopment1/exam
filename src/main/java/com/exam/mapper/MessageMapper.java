@@ -12,7 +12,7 @@ public interface MessageMapper {
     @Results({
             @Result(property = "replays", column = "tmep_id", many = @Many(select = "com.exam.mapper.ReplayMapper.findAllById"))
     })
-    IPage<MessageMapper> findAll(Page page);
+    IPage<Message> findAll(Page page);
 
     @Select("select id,title,content,time from message where id = #{id}")
     @Results({
