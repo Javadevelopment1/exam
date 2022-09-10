@@ -3,10 +3,7 @@ package com.exam.mapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.exam.entity.Student;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 @Mapper
 public interface StudentMapper {
@@ -27,5 +24,8 @@ public interface StudentMapper {
     @Update("update student set pwd = #{pwd} where studentId = #{studentId}")
     int updatePwd(Student student);
 
-
+    @Options(useGeneratedKeys = true, keyProperty = "studentId")
+    @Insert("insert into student(studentName,grade,major,clazz,institute,tel,email,pwd,cardId,sex,role) values " +
+            "(#{studentName},#{grade},#{major},#{clazz},#{institute},#{tel},#{email},#{pwd},#{cardId},#{sex},#{role})")
+    int add(Student student);
 }
