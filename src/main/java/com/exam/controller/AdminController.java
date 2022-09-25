@@ -2,7 +2,6 @@ package com.exam.controller;
 
 import com.exam.entity.Admin;
 import com.exam.entity.ApiResult;
-import com.exam.service.AdminService;
 import com.exam.serviceimpl.AdminServiceImpl;
 import com.exam.util.ApiResultHandler;
 import org.springframework.beans.factory.annotation.Autowired;

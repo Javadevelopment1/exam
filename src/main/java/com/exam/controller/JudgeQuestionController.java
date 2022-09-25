@@ -2,7 +2,6 @@ package com.exam.controller;
 
 import com.exam.entity.ApiResult;
 import com.exam.entity.JudgeQuestion;
-import com.exam.service.JudgeQuestionService;
 import com.exam.serviceimpl.JudgeQuestionServiceImpl;
 import com.exam.util.ApiResultHandler;
 import org.springframework.beans.factory.annotation.Autowired;
