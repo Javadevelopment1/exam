@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.exam.entity.ApiResult;
 import com.exam.service.AnswerService;
+import com.exam.serviceimpl.AnswerServiceImpl;
 import com.exam.util.ApiResultHandler;
 import com.exam.vo.AnswerVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AnswerController {
 
     @Autowired
-    private AnswerService answerService;
+    private AnswerServiceImpl answerService;
 
     @GetMapping("/answers/{page}/{size}")
     public ApiResult findAllQuestion(@PathVariable("page") Integer page, @PathVariable("size") Integer size) {
