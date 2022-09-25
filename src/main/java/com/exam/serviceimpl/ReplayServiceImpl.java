@@ -4,9 +4,11 @@ import com.exam.entity.Replay;
 import com.exam.mapper.ReplayMapper;
 import com.exam.service.ReplayService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ReplayServiceImpl implements ReplayService {
 
     @Autowired
